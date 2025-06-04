@@ -1,0 +1,8 @@
+.header-element {
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.header-element:hover {
+  color: #b4dcff;
+}

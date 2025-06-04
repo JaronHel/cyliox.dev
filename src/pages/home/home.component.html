@@ -1,0 +1,16 @@
+<div class="h-[600px] w-[1000px]">
+  <div class="grid h-full w-full grid-cols-2 grid-rows-2 gap-5">
+    <div class="content-element flex cursor-pointer items-center justify-center gap-5 bg-[rgba(0,0,0,0.2)]">
+      <img src="/about-me-icon.png" class="h-auto w-[50px] invert" alt="About Me" />
+      <span>About Me</span>
+    </div>
+    <div (click)="navigateToGitHub()" class="content-element flex cursor-pointer items-center justify-center gap-5 bg-[rgba(0,0,0,0.2)]">
+      <img src="/github-icon.png" class="h-auto w-[50px]" alt="GitHub" />
+      <span>Projects</span>
+    </div>
+    <div (click)="navigateToContact()" class="content-element col-span-2 flex cursor-pointer items-center justify-center gap-5 bg-[rgba(0,0,0,0.2)]">
+      <img src="/contact-icon.png" class="h-auto w-[50px] invert" alt="Contact" />
+      <span>Contact</span>
+    </div>
+  </div>
+</div>

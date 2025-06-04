@@ -1,0 +1,28 @@
+<div class="flex h-screen flex-col">
+  <!-- Background -->
+  <div class="z-[-1]">
+    <img src="/background.jpg" class="absolute inset-0 h-full w-full object-cover" alt="Background" />
+    <div class="absolute inset-0 bg-black/50"></div>
+  </div>
+
+  <!-- Header -->
+  <div class="flex h-[5%] items-center justify-between bg-transparent px-10 shadow-[0_10px_15px_-3px_rgba(0,0,0,0.3)]">
+    <div>
+      <span (click)="navigateToHome()" class="header-element">cyliox.dev</span>
+    </div>
+    <div class="flex gap-10">
+      <img src="/us-flag.png" class="header-element h-auto w-[25px]" alt="US" />
+      <span class="header-element">Login</span>
+    </div>
+  </div>
+
+  <!-- Content -->
+  <div class="flex flex-grow items-center justify-center">
+    <router-outlet></router-outlet>
+  </div>
+
+  <!-- Footer -->
+  <div class="flex h-[5%] items-center justify-center bg-transparent text-[15px] shadow-[0_-10px_15px_-3px_rgba(0,0,0,0.3)]">
+    <span>All Rights Reserved © Made with ❤️ by cyliox</span>
+  </div>
+</div>
